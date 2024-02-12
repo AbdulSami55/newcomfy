@@ -1,0 +1,65 @@
+** ComfyUI startup time: 2024-02-09 17:25:14.325950
+[2024-02-09 17:25] ** Platform: Windows
+[2024-02-09 17:25] ** Python version: 3.10.12 | packaged by Anaconda, Inc. | (main, Jul  5 2023, 19:01:18) [MSC v.1916 64 bit (AMD64)]
+[2024-02-09 17:25] ** Python executable: C:\Users\AbdulSami\anaconda3\envs\env\python.exe
+[2024-02-09 17:25] ** Log path: D:\CorTechSols\ComfyUI\comfyui.log
+[2024-02-09 17:25] 
+Prestartup times for custom nodes:
+[2024-02-09 17:25]    0.0 seconds: D:\CorTechSols\ComfyUI\custom_nodes\ComfyUI-Manager
+[2024-02-09 17:25] 
+[2024-02-09 17:25] Total VRAM 4096 MB, total RAM 32409 MB
+[2024-02-09 17:25] Trying to enable lowvram mode because your GPU seems to have 4GB or less. If you don't want this use: --normalvram
+[2024-02-09 17:25] Set vram state to: LOW_VRAM
+[2024-02-09 17:25] Device: cuda:0 NVIDIA GeForce RTX 2050 : cudaMallocAsync
+[2024-02-09 17:25] VAE dtype: torch.bfloat16
+[2024-02-09 17:25] Using pytorch cross attention
+[2024-02-09 17:25] aaa None
+[2024-02-09 17:25] ### Loading: ComfyUI-Impact-Pack (V4.70)
+[2024-02-09 17:25] ### Loading: ComfyUI-Impact-Pack (Subpack: V0.4)
+[2024-02-09 17:25] ### Loading: ComfyUI-Manager (V2.6)
+[2024-02-09 17:25] [Impact Pack] Wildcards loading done.
+[2024-02-09 17:25] 
+
+## [WARN] ComfyUI-Manager: Your ComfyUI version (1923)[2024-01-20] is too old. Please update to the latest version. ##
+
+[2024-02-09 17:25] 
+[2024-02-09 17:25] ### ComfyUI Revision: 1923 [ef5a28b5] | Released on '2024-01-20'
+[36;20m[comfyui_controlnet_aux] | INFO -> Using ckpts path: D:\CorTechSols\ComfyUI\custom_nodes\comfyui_controlnet_aux\ckpts[0m
+[2024-02-09 17:25] [36;20m[comfyui_controlnet_aux] | INFO -> Using symlinks: False[0m
+[2024-02-09 17:25] [36;20m[comfyui_controlnet_aux] | INFO -> Using ort providers: ['CUDAExecutionProvider', 'DirectMLExecutionProvider', 'OpenVINOExecutionProvider', 'ROCMExecutionProvider', 'CPUExecutionProvider', 'CoreMLExecutionProvider'][0m
+[2024-02-09 17:25] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2024-02-09 17:25] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2024-02-09 17:25] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2024-02-09 17:25] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2024-02-09 17:25] D:\CorTechSols\ComfyUI\custom_nodes\comfyui_controlnet_aux\node_wrappers\dwpose.py:26: UserWarning: DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly
+  warnings.warn("DWPose: Onnxruntime not found or doesn't come with acceleration providers, switch to OpenCV with CPU device. DWPose might run very slowly")
+[2024-02-09 17:25] 
+Import times for custom nodes:
+[2024-02-09 17:25]    0.0 seconds: D:\CorTechSols\ComfyUI\custom_nodes\ComfyUI-Video-Matting
+[2024-02-09 17:25]    0.0 seconds: D:\CorTechSols\ComfyUI\custom_nodes\ComfyUI-Advanced-ControlNet
+[2024-02-09 17:25]    0.0 seconds: D:\CorTechSols\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+[2024-02-09 17:25]    0.4 seconds: D:\CorTechSols\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+[2024-02-09 17:25]    0.6 seconds: D:\CorTechSols\ComfyUI\custom_nodes\ComfyUI-Manager
+[2024-02-09 17:25]    0.7 seconds: D:\CorTechSols\ComfyUI\custom_nodes\comfyui_controlnet_aux
+[2024-02-09 17:25]    2.2 seconds: D:\CorTechSols\ComfyUI\custom_nodes\ComfyUI-Impact-Pack
+[2024-02-09 17:25] 
+[2024-02-09 17:25] Starting server
+[2024-02-09 17:25] 
+[2024-02-09 17:25] To see the GUI go to: http://127.0.0.1:8188
+[2024-02-09 17:25] Error handling request
+Traceback (most recent call last):
+  File "C:\Users\AbdulSami\anaconda3\envs\env\lib\site-packages\aiohttp\web_protocol.py", line 452, in _handle_request
+    resp = await request_handler(request)
+  File "C:\Users\AbdulSami\anaconda3\envs\env\lib\site-packages\aiohttp\web_app.py", line 543, in _handle
+    resp = await handler(request)
+  File "C:\Users\AbdulSami\anaconda3\envs\env\lib\site-packages\aiohttp\web_middlewares.py", line 114, in impl
+    return await handler(request)
+  File "D:\CorTechSols\ComfyUI\server.py", line 59, in cache_control
+    response: web.Response = await handler(request)
+  File "D:\CorTechSols\ComfyUI\server.py", line 72, in cors_middleware
+    response = await handler(request)
+  File "D:\CorTechSols\ComfyUI\server.py", line 1207, in get_output_image
+    return web.Resource(f"output/{filename[-2]}")
+TypeError: Can't instantiate abstract class Resource with abstract methods _match, add_prefix, canonical, get_info, raw_match, url_for
+[2024-02-09 17:26] 
+Stopped server
